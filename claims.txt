@@ -1,0 +1,90 @@
+/*****************************************************************************
+TITLE: Claims																															
+Author: 2201CS79
+Name: karthik reddy yenugu
+Authorship:
+This txt file, claims.txt, is part of the mini project of CS209/CS210 .
+*****************************************************************************/
+
+Files:
+==========
+*All the files I submitted, asm.cpp and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the 5 test examples has also been uploaded. They are test1(3 output files), test2(3 output files), test4(3 output files) , test5(3 output files). 
+Both of my cpp program did not show any errors and warnings when i compiled it with
+
+=============================
+Program Structure:
+=============================
+1. The assembler:
+
+    * with two data structures to store respectively labels and mnemonic table with expected operands.
+    * uses a single routine for both passes.
+    * detects label errs.
+    * consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+		* advanced listing file.
+		* assembles test programs.
+	  * cannot implements and demonstrates the instruction SET.
+
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested 5 five examples shown as bellow. The errors only occurred in the file test2.asm
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example. 
+ 
+
+1)
+#Input: ./assemb.exe test1.asm
+#Output: 
+a. test1.l 
+b. test1.log (without any error messages)
+c. test1.o
+
+2)
+#Input:./assemb.exe test2.asm
+#Output: 
+a. test2.l 
+b. test2.log (with error messages shown as below but also in log file)
+c. test2.o
+
+error messages:
+Total errors: 9
+Error @Line:4	Duplicate label definition
+Error @Line:5	"nonesuch" is not yet defined
+Error @Line:6	Badly formatted number - 08ge
+Error @Line:7	Expected an operand
+Error @Line:9	Badly formatted number - 5,
+Error @Line:9	Extra operand
+Error @Line:10	Label Name Should be alphamueric
+Error @Line:11	incorrect mnemonic name
+Error @Line:12	incorrect mnemonic name
+
+
+3)#Input:./assemb.exe test3.asm
+#Output: 
+a. test3.l 
+b. test3.log (without any error messages)
+c. test3.o
+
+
+4)
+#Input:./assemb.exe test4.asm
+#Output: 
+a. test4.l 
+b. test4.log (without any error messages)
+c. test4.o
+
+5)
+#Input:./assemb.exe test5.asm
+#Output: 
+a. test5.l 
+b. test5.log (without any error messages)
+c. test5.o
+
